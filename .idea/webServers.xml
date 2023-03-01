@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="78305dc6-a3a5-41da-a3ea-a1f5a70de4a9" name="HMUDK" url="http://8.133.191.144">
+        <fileTransfer accessType="SFTP" host="8.133.191.144" port="22" sshConfigId="8f538580-ceaf-45ee-b9a2-c94fe2ed1c5c" sshConfig="hejian.ls@8.133.191.144:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
