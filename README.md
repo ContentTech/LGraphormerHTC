@@ -1,7 +1,7 @@
 Implement of HMUDK: Hierarchy-aware Model Using Data Knowledge for Hierarchy Text Classification
 
 
-Requirements
+#Requirements
 Python >= 3.6
 torch >= 1.6.0
 transformers >= 4.11.0
@@ -12,20 +12,18 @@ torch-sparse == 0.6.12
 Preprocess
 Please download the original dataset and then use these scripts.
 
-Web Of Science
+#Web Of Science
 The original dataset can be acquired in the repository of HDLTex. Preprocessing code could refer to the repository of HiAGM and we provide a copy of preprocessing code here. Please save the Excel data file Data.xlsx in WebOfScience/Meta-data as Data.txt.
 
 cd data/WebOfScience
 python preprocess_wos.py
 python data_wos.py
-NYT
+#NYT
 The original dataset can be acquired here. Place the unzipped folder nyt_corpus inside data/nyt (or unzip nyt_corpus_LDC2008T19.tgz inside data/nyt).
 
 cd data/nyt
-# unzip if necessary
-# tar -zxvf nyt_corpus_LDC2008T19.tgz -C ./
 python data_nyt.py
-RCV1-V2
+#RCV1-V2
 The preprocessing code could refer to the repository of reuters_loader and we provide a copy here. The original dataset can be acquired here by signing an agreement. Place rcv1.tar.xz and lyrl2004_tokens_train.dat (can be downloaded here) inside data/rcv1.
 
 cd data/rcv1
