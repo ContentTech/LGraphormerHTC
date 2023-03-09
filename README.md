@@ -31,8 +31,9 @@ The preprocessing code could refer to the repository of reuters_loader and we pr
 cd data/rcv1
 python preprocess_rcv1.py ./
 python data_rcv1.py
+
 Train
-usage: train.py [-h] [--lr LR] [--data DATA] [--batch BATCH] [--early-stop EARLY_STOP] [--device DEVICE] --name NAME [--update UPDATE] [--model MODEL] [--wandb] [--arch ARCH] [--layer LAYER] [--graph GRAPH] [--prompt-loss]
+usage: train.py [-h] [--lr LR] [--data DATA] [--batch BATCH] [--early-stop EARLY_STOP] [--device DEVICE] [----output_dir OUTPUT_IDR] --name NAME [--update UPDATE] [--model MODEL] [--wandb] [--arch ARCH] [--layer LAYER] [--graph GRAPH] [--prompt-loss]
                 [--low-res] [--seed SEED]
 
 optional arguments:
@@ -42,11 +43,12 @@ optional arguments:
   --batch BATCH             Batch size.
   --early-stop EARLY_STOP   Epoch before early stop.
   --device DEVICE           cuda or cpu. Default: cuda.
+  --output_dir OUTPUT_DIR   the dir to save the checkpoint
   --name NAME               A name for different runs.
   --update UPDATE           Gradient accumulate steps.
   --wandb                   Use wandb for logging.
   --seed SEED               Random seed.
-Checkpoints are in ./checkpoints/DATA-NAME. Two checkpoints are kept based on macro-F1 and micro-F1 respectively (checkpoint_best_macro.pt, checkpoint_best_micro.pt).
+Checkpoints are in OUTPUT_DIR/checkpoints/DATA-NAME. Two checkpoints are kept based on macro-F1 and micro-F1 respectively (checkpoint_best_macro.pt, checkpoint_best_micro.pt).
 
 Example:
 
