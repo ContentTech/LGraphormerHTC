@@ -1,4 +1,4 @@
-Implement of HMUDK: Hierarchy-aware Model Using Data Knowledge for Hierarchy Text Classification
+Implement of LGraphormerHTC: Label-guided Graphormer for Hierarchy Text Classification
 
 
 # Requirements  
