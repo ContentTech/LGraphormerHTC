@@ -32,23 +32,25 @@ cd data/rcv1
 python preprocess_rcv1.py ./
 python data_rcv1.py
 
-Train
+Train  
 usage: train.py [-h] [--lr LR] [--data DATA] [--batch BATCH] [--early-stop EARLY_STOP] [--device DEVICE] [----output_dir OUTPUT_IDR] --name NAME [--update UPDATE] [--model MODEL] [--wandb] [--arch ARCH] [--layer LAYER] [--graph GRAPH] [--prompt-loss]
                 [--low-res] [--seed SEED]
 
-optional arguments:
-  -h, --help                show this help message and exit
-  --lr LR					Start learning rate. Default: 3e-5.
-  --data {WebOfScience,nyt,rcv1} Dataset.
-  --batch BATCH             Batch size.
-  --early-stop EARLY_STOP   Epoch before early stop.
-  --device DEVICE           cuda or cpu. Default: cuda.
-  --output_dir OUTPUT_DIR   the dir to save the checkpoint
-  --name NAME               A name for different runs.
-  --update UPDATE           Gradient accumulate steps.
-  --wandb                   Use wandb for logging.
-  --seed SEED               Random seed.
-Checkpoints are in OUTPUT_DIR/checkpoints/DATA-NAME. Two checkpoints are kept based on macro-F1 and micro-F1 respectively (checkpoint_best_macro.pt, checkpoint_best_micro.pt).
+optional arguments:   
+  -h, --help                show this help message and exit   
+  --lr LR					Start learning rate. Default: 3e-5.   
+  --data {WebOfScience,nyt,rcv1} Dataset   
+  --batch BATCH             Batch size   
+  --early-stop EARLY_STOP   Epoch before early stop   
+  --device DEVICE           cuda or cpu. Default: cuda   
+  --output_dir OUTPUT_DIR   the dir to save the checkpoint   
+  --name NAME               A name for different runs   
+  --update UPDATE           Gradient accumulate steps   
+  --wandb                   Use wandb for logging   
+  --seed SEED               Random seed  
+  
+  
+Checkpoints are in OUTPUT_DIR/checkpoints/DATA-NAME. Two checkpoints are kept based on macro-F1 and micro-F1 respectively (checkpoint_best_macro.pt, checkpoint_best_micro.pt)   
 
 Example:
 
